@@ -1639,7 +1639,6 @@ static int check_read_desc_size(__u8 idn, __u8 *data_buf)
 	if (unoff) {
 		int file_status;
 
-		rc = WARNING;
 		print_warn("Unofficial %s desc size, len = 0x%x",
 			    (char *)desc_text[idn], data_buf[0]);
 		file_status = write_file("unofficial.dat", data_buf,
